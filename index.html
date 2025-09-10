@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Style Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<div class="topbar">
+    <span class="menu-icon" onclick="openNav()">☰</span>
+    <span class="logo"><sub>16.</sub><sup>02345</sup> π</span>
+    <div class="language-selector">
+        <span class="lang-btn" onclick="toggleLanguageMenu()">🌐 EN ▼</span>
+        <div class="lang-dropdown" id="langDropdown">
+            <h4>Select your language</h4>
+            <h6><strong>Note:</strong>The app inteeface in other languages is translated by Pi's community members and may contain some inaccuracies. For full accuracy refer to the English app interface</h6>
+            <a href="#">English</a>
+            <a href="#">తెలుగు</a>
+            <a href="#">हिन्दी</a>
+            <a href="#">Español</a>
+            <a href="#">Français</a>
+            <a href="#">Deutsch</a>
+            <a href="#">中文</a>
+            <a href="#">日本語</a>
+            <a href="#">Русский</a>
+            <a href="#">Italiano</a>
+            <a href="#">Português</a>
+            <a href="#">한국어</a>
+            <a href="#">العربية</a>
+            <a href="#">Türkçe</a>
+            <a href="#">ไทย</a>
+            <a href="#">বাংলা</a>
+            <a href="#">فارسی</a>
+            <a href="#">Українська</a>
+            <a href="#">Polski</a>
+            <a href="#">Čeština</a>
+        </div>
+    </div>
+</div>
+
+<!-- Side Menu -->
+<div id="mySidenav" class="sidenav">
+    <div class="intra"> Welcome <br>Mr.Name
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <hr>
+    </div>
+    <a href="#">Home</a>
+    <a href="#">Mainnet</a>
+    <a href="#">Pi Browser</a>
+    <a href="#">Pi Utilities</a>
+    <a href="#">Mine Pi</a>
+    <a href="#">Referral Team</a>
+    <a href="#">π Roles</a>
+    <a href="#">Chat</a>
+    <a href="#">Node</a>
+    <a href="#">FAQ</a>
+    <a href="#">White Paper</a>
+    <a href="#">Support Portal</a>
+    <a href="#">Core Team</a>
+    <a href="#">Profile</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
