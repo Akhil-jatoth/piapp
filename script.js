@@ -1,12 +1,31 @@
 // Open Side Menu
 function openNav() {
-  document.getElementById("mySidenav").style.width = "320px";
+  let sidenav = document.getElementById("mySidenav");
+
+  if (window.innerWidth <= 600) {
+    // 📱 Mobile
+    sidenav.style.width = "220px";
+  } else if (window.innerWidth <= 992) {
+    // 📲 Tablet
+    sidenav.style.width = "280px";
+  } else {
+    // 💻 Desktop
+    sidenav.style.width = "350px";
+  }
 }
 
 // Close Side Menu
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+// 👂 Optional: Adjust menu size when resizing window
+window.addEventListener("resize", function () {
+  let sidenav = document.getElementById("mySidenav");
+  if (sidenav.style.width !== "0px" && sidenav.style.width !== "") {
+    openNav(); // reopen with correct width
+  }
+});
 
 // Toggle Language Menu
 function toggleLanguageMenu() {
