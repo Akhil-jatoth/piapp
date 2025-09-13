@@ -159,3 +159,91 @@ strong{
     font-size: 45px;
     color: white;
 }
+
+
+
+/* ==============================
+   Responsive Design Media Queries
+   ============================== */
+
+/* 📱 Small Devices (Mobile: up to 600px) */
+@media screen and (max-width: 600px) {
+  .topbar {
+    font-size: 22px;       /* smaller text */
+    padding: 15px;         /* less padding */
+  }
+
+  .menu-icon {
+    font-size: 28px;       /* smaller menu icon */
+  }
+
+  .intra {
+    font-size: 24px;       /* intro text smaller */
+  }
+
+  .lang-dropdown {
+    min-width: 200px;       /* full width dropdown */
+    max-height: 900px;     /* shorter dropdown */
+  }
+
+  .sidenav a {
+    font-size: 20px;       /* smaller links */
+    padding: 12px 15px;
+  }
+}
+
+/* 📱📲 Medium Devices (Tablets: 601px – 992px) */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .topbar {
+    font-size: 28px;
+    padding: 20px;
+  }
+
+  .menu-icon {
+    font-size: 32px;
+  }
+
+  .intra {
+    font-size: 30px;
+  }
+
+  .lang-dropdown {
+    min-width: 500px;
+    max-height: 500px;
+  }
+
+  .sidenav a {
+    font-size: 25px;
+    padding: 14px 18px;
+  }
+}
+
+/* 💻 Large Devices (Desktops: 993px and up) */
+@media screen and (min-width: 993px) {
+  .topbar {
+    font-size: 35px;
+    padding: 27px;
+  }
+
+  .menu-icon {
+    font-size: 40px;
+  }
+
+  .intra {
+    font-size: 37px;
+  }
+
+  .lang-dropdown {
+    min-width: 700px;
+    max-height: 1000px;
+  }
+
+  .sidenav {
+    width: 280px;         /* fixed sidebar width */
+  }
+
+  .sidenav a {
+    font-size: 30px;
+    padding: 15px 20px;
+  }
+}
