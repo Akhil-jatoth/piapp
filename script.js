@@ -33,6 +33,27 @@ function toggleLanguageMenu() {
   dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
 }
 
+// Toggle dropdown
+function toggleLanguageMenu() {
+  document.getElementById("langDropdown").style.display =
+    document.getElementById("langDropdown").style.display === "block"
+      ? "none"
+      : "block";
+}
+
+// Change language on click
+document.querySelectorAll("#langDropdown a").forEach(item => {
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    let langCode = this.getAttribute("data-code"); // get code
+    document.querySelector(".lang-btn").textContent = "🌐 " + langCode + " ▼";
+
+    // close dropdown after selecting
+    document.getElementById("langDropdown").style.display = "none";
+  });
+});
+
+
 // Close language menu if clicked outside
 window.onclick = function(event) {
   if (!event.target.matches('.lang-btn')) {
