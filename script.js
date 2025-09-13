@@ -41,6 +41,12 @@ function toggleLanguageMenu() {
       : "block";
 }
 
+// Set default as English on load
+document.addEventListener("DOMContentLoaded", function () {
+  const langBtn = document.getElementById("selectedLang");
+  langBtn.textContent = "🌐 EN ▼"; // Default
+});
+
 // Change language on click
 document.querySelectorAll("#langDropdown a").forEach(item => {
   item.addEventListener("click", function (e) {
